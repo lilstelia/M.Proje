@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../static/css/style.css"> 
+  <title>İsraf Önleme Projesi</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>İsraf Önleme Projesi</h1>
+      <p>Girişimde bulunun ve israf sorununu çözün !</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    <h2 class="main__title main__title--margin">Sonuçlarınız:</h2>
+    <div class="main__rez" id="end">
+
+        {%if result <= 105.12%}
+        <img class="rez__img" src="https://image.gazetevatan.com/i/gazetevatan/75/1200x675/65ba581ae14f2adf329ec05f.jpg" alt="">
+        <span>İsrafı önlemeyi başardınız !</span>
+
+        {%elif result > 105.12 and result < 135.12%}
+        <img class="rez__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiZoQoHA_JzWv6Tr0fmT-D9X-RTZN3ngUtiw&s" alt="">
+        <span>İsrafı önlemeyi hala başarmış değilsiniz !</span>
+
+        {%elif result == 135.12%}
+        <img class="rez__img" src="https://media.istockphoto.com/id/1035586818/tr/vekt%C3%B6r/hay%C4%B1r-giri%C5%9F-i%C5%9Fareti.jpg?s=612x612&w=0&k=20&c=XTRq-9JLQgttFsIbNlPnAs87i255dyHIl74-vYqabxA=" alt="">  
+        <span>İsrafı önlemeyi başaramadınız !</span>
+        <span>İsrafı önlemeye yardımcı olmak ister misin ? Formu doldurun ve size yardımcı olalım !</span>
+        <a href="{{ url_for('form') }}">Bağlantı</a> 
+
+        {%elif result == 235.12%}
+        <img class="rez__img" src="https://media.istockphoto.com/id/1035586818/tr/vekt%C3%B6r/hay%C4%B1r-giri%C5%9F-i%C5%9Fareti.jpg?s=612x612&w=0&k=20&c=XTRq-9JLQgttFsIbNlPnAs87i255dyHIl74-vYqabxA=" alt="">  
+        <span>İsrafı önlemeyi başaramadınız !</span>
+        <span>İsrafı önlemeye yardımcı olmak ister misin ? Formu doldurun ve size yardımcı olalım !</span>
+        <a href="{{ url_for('form') }}">Bağlantı</a>
+
+        {%elif result == 235.4%}
+        <img class="rez__img" src="https://media.istockphoto.com/id/1035586818/tr/vekt%C3%B6r/hay%C4%B1r-giri%C5%9F-i%C5%9Fareti.jpg?s=612x612&w=0&k=20&c=XTRq-9JLQgttFsIbNlPnAs87i255dyHIl74-vYqabxA=" alt="">  
+        <span>İsrafı önlemeyi başaramadınız !</span>
+        <span>İsrafı önlemeye yardımcı olmak ister misin ? Formu doldurun ve size yardımcı olalım !</span>
+        <a href="{{ url_for('form') }}">Bağlantı</a>
+
+        {%elif result == 235.28%}
+        <img class="rez__img" src="https://media.istockphoto.com/id/1035586818/tr/vekt%C3%B6r/hay%C4%B1r-giri%C5%9F-i%C5%9Fareti.jpg?s=612x612&w=0&k=20&c=XTRq-9JLQgttFsIbNlPnAs87i255dyHIl74-vYqabxA=" alt="">  
+        <span>İsrafı önlemeyi başaramadınız !</span>
+        <span>İsrafı önlemeye yardımcı olmak ister misin ? Formu doldurun ve size yardımcı olalım !</span>
+        <a href="{{ url_for('form') }}">Bağlantı</a>
+
+        {%elif result == 335.4%}
+        <img class="rez__img" src="https://media.istockphoto.com/id/1035586818/tr/vekt%C3%B6r/hay%C4%B1r-giri%C5%9F-i%C5%9Fareti.jpg?s=612x612&w=0&k=20&c=XTRq-9JLQgttFsIbNlPnAs87i255dyHIl74-vYqabxA=" alt="">  
+        <span>İsrafı önlemeyi başaramadınız !</span>
+        <span>İsrafı önlemeye yardımcı olmak ister misin ? Formu doldurun ve size yardımcı olalım !</span>
+        <a href="{{ url_for('form') }}">Bağlantı</a>
+
+        {%elif result == 135.4%}
+        <img class="rez__img" src="https://media.istockphoto.com/id/1035586818/tr/vekt%C3%B6r/hay%C4%B1r-giri%C5%9F-i%C5%9Fareti.jpg?s=612x612&w=0&k=20&c=XTRq-9JLQgttFsIbNlPnAs87i255dyHIl74-vYqabxA=" alt="">  
+        <span>İsrafı önlemeyi başaramadınız !</span>
+        <span>İsrafı önlemeye yardımcı olmak ister misin ? Formu doldurun ve size yardımcı olalım !</span>
+        <a href="{{ url_for('form') }}">Bağlantı</a>
+
+        {%elif result == 220.4%}
+        <img class="rez__img" src="https://media.istockphoto.com/id/1035586818/tr/vekt%C3%B6r/hay%C4%B1r-giri%C5%9F-i%C5%9Fareti.jpg?s=612x612&w=0&k=20&c=XTRq-9JLQgttFsIbNlPnAs87i255dyHIl74-vYqabxA=" alt="">  
+        <span>İsrafı önlemeyi başaramadınız !</span>
+        <span>İsrafı önlemeye yardımcı olmak ister misin ? Formu doldurun ve size yardımcı olalım !</span>
+        <a href="{{ url_for('form') }}">Bağlantı</a>
+
+        {%else%}
+        <img class="rez__img" src="https://image.gazetevatan.com/i/gazetevatan/75/1200x675/65ba581ae14f2adf329ec05f.jpg" alt="">
+        <span>İsrafı önlemeyi başardınız !</span>
+
+        {%endif%}  
+    </div>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
